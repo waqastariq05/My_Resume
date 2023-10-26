@@ -2,8 +2,109 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
+/*  =================================== Login Page ===================================*/
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#c3266f, #743578);
+    position: relative;
+}
+
+.back .loginBox {
+    width: 30%;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.back .loginBox h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.back .loginBox .inputFiled input {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 34px;
+    border: 2px solid #c3266f;
+}
+
+.back .loginBox .inputFiled input:focus {
+    outline: none;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #c3266f;
+    cursor: pointer;
+}
+
+.errorBox {
+    position: absolute;
+    background: #fff;
+    padding: 40px 30px;
+    width: 35%;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transform: scale(0.5);
+    transition: all .3s ease;
+}
+
+.errorBox.active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.errorBox i {
+    padding: 14px 18px;
+    border: 2px solid #743578;
+    border-radius: 100%;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.errorBox p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.errorBox .btn {
+    background: #c3266f;
+    padding: 12px 30px;
+}
+
+.errorBox .btn:hover {
+    color: #fff;
+}
+
+/*  =================================== Resume ===================================*/
 .heading {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
